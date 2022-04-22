@@ -4,7 +4,7 @@ import 'package:flutterlayout/model/tourism_place.dart';
 import 'package:http/http.dart' as http;
 
 class ApiService {
-  static const baseUrl = 'http://192.168.99.38/tourism-backend/public/api/';
+  static const baseUrl = 'http://192.168.100.59/appwisata-backend/public/api/';
 
   Future<TourismResult> getTourismList() async {
     final response = await http.get(Uri.parse(baseUrl + 'tourism'));

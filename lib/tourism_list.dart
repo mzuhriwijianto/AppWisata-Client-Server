@@ -18,9 +18,9 @@ class _TourismList extends State<TourismList> {
   late Future<TourismResult> _tourismResult;
 
   @override
-  void initState(){
+  void initState() {
     super.initState();
-    _tourismResult=ApiService().getTourismList();
+    _tourismResult = ApiService().getTourismList();
   }
 
   @override
@@ -48,10 +48,10 @@ class _TourismList extends State<TourismList> {
                     onTap: () {
                       Navigator.push(context,
                           MaterialPageRoute(builder: (context) {
-                            return DetailScreen(
-                              place: place!,
-                            );
-                          }));
+                        return DetailScreen(
+                          place: place!,
+                        );
+                      }));
                     },
                     child: Consumer<DoneTourismProvider>(
                       builder: (context, DoneTourismProvider data, widget) {
